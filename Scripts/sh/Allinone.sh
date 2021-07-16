@@ -42,10 +42,10 @@ fi
 chmod 755 $extra_shell_path
 
 # extra.sh 预设仓库及默认拉取仓库设置
-echo -e "（1）panghu999\n（2）JDHelloWorld\n（3）he1pu\n（4）shufflewzc"
-echo -n "输入你想拉取的仓库编号(默认为 4):"
+echo -e "（1）Annyoo2021\n（2）JDHelloWorld\n（3）he1pu\n（4）shufflewzc"
+echo -n "输入你想拉取的仓库编号(默认为 1):"
 read -r defaultNum
-defualtNum=${defaultNum:-'4'}
+defualtNum=${defaultNum:-'1'}
 sed -i "s/\$default4/\$default$defaultNum/g" $extra_shell_path
 
 # 将 extra.sh 添加到定时任务
@@ -75,10 +75,10 @@ fi
 chmod 755 $code_shell_path
 
 # code.sh 预设仓库及默认调用仓库设置
-echo -e "## 将\"repo=\$repo1\"改成\"repo=\$repo2\"或其他，以默认调用其他仓库脚本日志\nrepo1='panghu999_jd_scripts' #预设的 panghu999 仓库\nrepo2='JDHelloWorld_jd_scripts' #预设的 JDHelloWorld 仓库\nrepo3='he1pu_JDHelp' #预设的 he1pu 仓库\nrepo4='shufflewzc_faker2' #预设的 shufflewzc 仓库\nrepo=\$repo1 #默认调用 panghu999 仓库脚本日志"
-echo -n "输入你想调用的仓库编号(默认为 4):"
+echo -e "## 将\"repo=\$repo1\"改成\"repo=\$repo2\"或其他，以默认调用其他仓库脚本日志\nrepo1='Annyoo2021_jd_scripts' #预设的 Annyoo2021 仓库\nrepo2='JDHelloWorld_jd_scripts' #预设的 JDHelloWorld 仓库\nrepo3='he1pu_JDHelp' #预设的 he1pu 仓库\nrepo4='shufflewzc_faker2' #预设的 shufflewzc 仓库\nrepo=\$repo1 #默认调用 panghu999 仓库脚本日志"
+echo -n "输入你想调用的仓库编号(默认为 1):"
 read -r repoNum
-repoNum=${repoNum:-'4'}
+repoNum=${repoNum:-'1'}
 sed -i "s/\$repo1/\$repo$repoNum/g" $code_shell_path
 
 # 将 code.sh 添加到定时任务
