@@ -6,10 +6,10 @@
 
 
 ## 预设仓库和参数（u=url，p=path，b=blacklist，d=dependence），如果懂得定义可以自行修改
-## （1）预设的 panghu999 仓库
-u1="https://github.com/panghu999/jd_scripts.git"
+## （1）预设的 Annyoo2021 仓库
+u1="https://github.com/Annyoo2021/scripts.git"
 p1="jd_|jx_|getJDCookie" 
-b1="activity|backUp|Coupon|jd_try|format_" 
+b1="activity|backUp|docker|utils" 
 d1="^jd[^_]|USER" 
 ## （2）预设的 JDHelloWorld 仓库
 u2="https://github.com/JDHelloWorld/jd_scripts.git"
@@ -32,7 +32,7 @@ default2="$u2 $p2 $b2 $d2"
 default3="$u3 $p3 $b3 $d3"
 default4="$u4 $p4 $b4 $d4"
 ## 默认拉取仓库编号设置
-default=$default4 ##此处修改，只改数字，默认 shufflewzc 仓库
+default=$default1 ##此处修改，只改数字，默认 Annyoo2021 仓库
 
 
 # 整库
